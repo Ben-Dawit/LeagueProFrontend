@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .backgroundhomepage {
+            min-height: 100%;
+            min-width: 1024px;
+            width: 100%;
+            height: auto;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            background: #07064B;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            z-index: -2;
+        }
+
+        .matchhistorybackground {
+            position: absolute;
+            width: 1280px;
+            height: 870px;
+            left: 94px;
+            top: 96px;
+            background: #5D47E7;
+            mix-blend-mode: normal;
+        }
+        
+
+        .alltimekdabackground {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            left: 1440px;
+            top: 157px;
+            background: #5D47E7;
+            border-radius: 200px;
+        }
+
+        .alltimekdawords {
+            position: absolute;
+            width: 300px;
+            height: 48px;
+            left: 1497px;
+            top: 96px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 140.62%;
+
+            color: #FFFFFF;
+        }
+
+        .alltimedka {
+            position: absolute;
+            width: 238px;
+            height: 172px;
+            left: 1496px;
+            top: 245px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 122px;
+            line-height: 140.62%;
+
+            color: #FFFFFF;
+        }
+
+        .rankimage {
+            position: absolute;
+            width: 341px;
+            height: 401px;
+            left: 1470px;
+            top: 570px;
+        }
+
+        .champicon1 {
+            position: absolute;       
+            left: 175px;
+            top: 155px;
+            border-radius: 200px;
+        }
+
+        .champicon2 {
+            position: absolute;   
+            left: 175px;
+            top: 445px;
+            border-radius: 200px;
+        }
+
+        .champicon3 {
+            position: absolute;
+            left: 175px;
+            top: 735px;
+            border-radius: 200px;
+        }
+
+        .matchresult1 {
+            position: absolute;
+            left: 1050px;
+            top: 115px;
+            border-radius: 200px;
+        }
+
+        .matchresult2 {
+            position: absolute;
+            left: 1050px;
+            top: 405px;
+            border-radius: 200px;
+        }
+
+        .matchresult3 {
+            position: absolute;
+            left: 1100px;
+            top: 695px;
+            border-radius: 200px;
+        }
+
+        .summonername {
+            position: absolute;
+            width: 370px;
+            height: 65px;
+            left: 545px;
+            top: 31px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 46px;
+            line-height: 140.62%;
+
+            color: #FFFFFF;
+        }
+
+        .kda1 {
+            position: absolute;
+            width: 500px;
+            height: 54px;
+            left: 600px;
+            top: 190px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 76px;
+            line-height: 140.62%;
+
+            color: #FFFFFF;
+        }
+
+        .kda2 {
+            position: absolute;
+            width: 500px;
+            height: 54px;
+            left: 600px;
+            top: 480px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 76px;
+            line-height: 140.62%;
+
+            color: #FFFFFF;
+        }
+
+        .kda3 {
+            position: absolute;
+            width: 500px;
+            height: 54px;
+            left: 600px;
+            top: 770px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 76px;
+            line-height: 140.62%;
+
+            color: #FFFFFF;
+        }
+
+        .line1 {
+            position: absolute;
+            width: 1280px;
+            height: 0px;
+            left: 94px;
+            top: 386px;
+            border: 1px solid #000000;
+        }
+
+        .line2 {
+            position: absolute;
+            width: 1280px;
+            height: 0px;
+            left: 94px;
+            top: 676px;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="backgroundhomepage"></div>
+    <div class="matchhistorybackground"></div>
+    <div class="alltimekdabackground"></div>
+    <div class="alltimekdawords">ALL TIME KDA</div>
+    <div class="alltimedka">2.71</div>
+    <div class="rankimage"><img src="silver.png" /></div>
+    <div class="champicon1"><img src="teemo.png" width="150" height="150" /></div>
+    <div class="champicon2"><img src="teemo.png" width="150" height="150" /></div>
+    <div class="champicon3"><img src="teemo.png" width="150" height="150" /></div>
+    <div class="matchresult1"><img src="victory.png" width="350"  /></div>
+    <div class="matchresult2"><img src="victory.png" width="350" /></div>
+    <div class="matchresult3"><img src="defeat.png" width="250"  /></div>
+    <div class="kda1">13 / 3 / 8</div>
+    <div class="kda2">30 / 0 / 18</div>
+    <div class="kda3">9 / 3 / 18</div>
+
+    <div class="summonername">Sumoner Name</div>
+    <div class="line1"></div>
+    <div class="line2"></div>
+
+</body>
+</html>

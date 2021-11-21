@@ -5,7 +5,7 @@ var championLevel;
 var championPoints;
 
 function getSummonerName(summonerName){
-    fetch("https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + summonerName + "?api_key=RGAPI-ce1a57cb-27ee-4caf-8ce9-626d79c4b6c1").then(function(response) {
+    fetch('3.144.5.119:8000 /summoner/' + summonerName).then(function(response) {
       //fetch line, replace this link with our api and change information accordingly. Delete this after
       //all relevent information about a given summoner will be included in this get.
       return response.json();

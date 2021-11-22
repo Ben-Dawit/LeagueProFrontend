@@ -5,20 +5,21 @@ var championLevel;
 var championPoints;
 
 function getSummonerName(summonerName){
-    fetch('3.144.5.119:8000 /summoner/' + summonerName).then(function(response) {
-      //fetch line, replace this link with our api and change information accordingly. Delete this after
-      //all relevent information about a given summoner will be included in this get.
-      return response.json();
-    }).then(function(data) {
+    fetch('http://3.144.5.119:8000/summoner/' + summonerName)
+    
+    .then((resp) => resp.json()) 
+    .then(function(data) {
         //below is a test set of data, uncomment and run to test inputs
         //data = '{"summonerName": "Pogitivity","summonerLevel": 320,"championName": ["Riven", "Akali", "Vayne"],"championLevel": [1000, 69, 2],"championPoints": [12912019209, 6969, 1]}'
-        data = JSON.parse(data);
+        console.log(data);
+        console.log("hi");
         summonerName = data['summonerName'];
         summonerLevel = data['summonerLevel'];
         championName = data['championName'];
         championLevel = data['championLevel'];
         championPoints = data['championPoints'];
         console.log(data);
+        
       }).then(function(data) {
           //swap ins for the values present on the HTML page with proper read values from API
           document.getElementById("sumName").innerHTML = summonerName;
